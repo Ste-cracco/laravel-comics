@@ -1,0 +1,159 @@
+.container {
+    display: flex; 
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    padding: 20px
+}
+
+.container .logo img {
+    height: 85px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    margin-left: auto;
+    gap: 25px;
+}
+
+li {
+    font-weight: bold;
+    color: #464646;
+    font-size: 14px;
+}
+
+a.active, a:hover {
+    border-bottom: 5px solid #0282F9;
+    color: #0282F9;
+    padding-bottom: 52px;      
+    cursor: pointer;          
+}.footer_top {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    background-color: #0282F9;
+    color: white;
+}
+
+.container_footer_top {
+    display: flex;
+    margin: auto;  
+    gap: 50px; 
+}
+
+.container_footer_top .card {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 50px 0;
+    gap: 15px;
+}
+
+.container_footer_top .card img {
+    width: 50px;
+}
+
+.container_footer_top .card h4 {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 13px;
+}.footer_middle {
+    background-image: url('../img/footer-bg.jpg');
+}
+
+.container_footer_middle {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    max-width: 1200px;
+    margin: auto;   
+}
+
+.menu_footer {
+    display: flex;
+    gap: 65px;
+}
+
+
+.menu_footer ul {            
+    padding: 20px 0;
+    gap: 65px;
+}  
+
+.menu_footer ul a {
+    color: gray;
+    font-size: 12px;
+    display: block;
+}
+
+.menu_footer ul a.title {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+a:last-child {
+    padding-bottom: 10px;
+}
+
+.logo_footer img {
+    position: absolute;
+    top: -130px;
+    right: 0px;
+}.footer_bottom {
+    background-color: #303030;
+}
+
+.container_footer_bottom {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container_footer_bottom button {
+    border: 2px solid #0282F9;
+    padding: 10px;
+    background-color: #303030;
+    color: white;
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+
+.container_social {
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    gap: 8px;
+}
+
+.container_social span {
+    color: #0282F9;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 20px;
+}* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul, ol, menu {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}

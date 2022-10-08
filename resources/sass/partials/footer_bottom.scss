@@ -1,0 +1,33 @@
+.footer_bottom {
+    background-color: #303030;
+}
+
+.container_footer_bottom {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container_footer_bottom button {
+    border: 2px solid #0282F9;
+    padding: 10px;
+    background-color: #303030;
+    color: white;
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+
+.container_social {
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    gap: 8px;
+}
+
+.container_social span {
+    color: #0282F9;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 20px;
+}

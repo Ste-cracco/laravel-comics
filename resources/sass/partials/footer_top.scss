@@ -1,0 +1,31 @@
+.footer_top {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    background-color: #0282F9;
+    color: white;
+}
+
+.container_footer_top {
+    display: flex;
+    margin: auto;  
+    gap: 50px; 
+}
+
+.container_footer_top .card {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 50px 0;
+    gap: 15px;
+}
+
+.container_footer_top .card img {
+    width: 50px;
+}
+
+.container_footer_top .card h4 {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 13px;
+}

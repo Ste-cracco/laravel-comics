@@ -1,0 +1,46 @@
+.footer_middle {
+    background-image: url('../img/footer-bg.jpg');
+}
+
+.container_footer_middle {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    max-width: 1200px;
+    margin: auto;   
+}
+
+.menu_footer {
+    display: flex;
+    gap: 65px;
+}
+
+
+.menu_footer ul {            
+    padding: 20px 0;
+    gap: 65px;
+}  
+
+.menu_footer ul a {
+    color: gray;
+    font-size: 12px;
+    display: block;
+}
+
+.menu_footer ul a.title {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+a:last-child {
+    padding-bottom: 10px;
+}
+
+.logo_footer img {
+    position: absolute;
+    top: -130px;
+    right: 0px;
+}
