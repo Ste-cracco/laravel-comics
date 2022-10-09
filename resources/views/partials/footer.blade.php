@@ -6,19 +6,19 @@
                 <h4>Digital Comics</h4>
             </div>
             <div class="card">
-                <img src="{{ asset('img/buy-comics-digital-comics.png') }}" alt="">
+                <img src="{{ asset('img/buy-comics-merchandise.png') }}" alt="">
                 <h4>DC Merchandise</h4>
             </div>
             <div class="card">
-                <img src="{{ asset('img/buy-comics-digital-comics.png') }}" alt="">
+                <img src="{{ asset('img/buy-comics-subscriptions.png') }}" alt="">
                 <h4>Subcription</h4>
             </div>
             <div class="card">
-                <img src="{{ asset('img/buy-comics-digital-comics.png') }}" alt="">
+                <img src="{{ asset('img/buy-comics-shop-locator.png') }}" alt="">
                 <h4>Comic Shop Locator</h4>
             </div>
             <div class="card">
-                <img src="{{ asset('img/buy-comics-digital-comics.png') }}" alt="">
+                <img src="{{ asset('img/buy-dc-power-visa.svg') }}" alt="">
                 <h4>DC Power Visa</h4>
             </div>
         </div> <!-- Chiusura Container Footer Top -->
@@ -73,9 +73,37 @@
                             <a class="{{ $loop -> first ? 'title' : '' }}"> 
                                 {{ $link['text'] }} 
                             </a>
-                        </li> 
-                            
+                        </li>                             
                         @endforeach
+                    </ul>
+                    <ul>
+                        <li>
+                            <a class="titolo" href=""> DC </a>
+                        </li>
+                        <li>
+                            <a href=""> Lorem Ipsum </a>
+                        </li>
+                        <li>
+                            <a href=""> Lorem Ipsum </a>
+                        </li>
+                        <li>
+                            <a href=""> Lorem Ipsum </a>
+                        </li>
+                        <li>
+                            <a href=""> Lorem Ipsum </a>
+                        </li>
+                        <li>
+                            <a href=""> Lorem Ipsum </a>
+                        </li>
+                        <li>
+                            <a href=""> Lorem Ipsum </a>
+                        </li>
+                        <li>
+                            <a href=""> Lorem Ipsum </a>
+                        </li>
+                        <li>
+                            <a href=""> Lorem Ipsum </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="logo_footer">
