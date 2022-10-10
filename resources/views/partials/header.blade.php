@@ -8,10 +8,12 @@
             
             $menu = [
                 [
-                    'text' => 'Characters'
+                    'text' => 'Characters',
+                    'routeName' => 'home'
                 ],
                 [
-                    'text' => 'Comics'
+                    'text' => 'Comics',
+                    'routeName' => 'comics'
                 ],
                 [
                     'text' => 'Movies'
@@ -44,7 +46,7 @@
         <ul class="menu">
             @foreach ($menu as $link)
                 <li>
-                    <a class="{{ $loop -> first ? 'active' : '' }}"> 
+                    <a href="{{ isset($link['routeName']) ? route($link['routeName']) : '/' }}" class="{{ $loop -> first ? 'active' : '' }}"> 
                         {{ $link['text'] }} 
                     </a>
                 </li>       

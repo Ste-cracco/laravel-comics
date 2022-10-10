@@ -18,14 +18,16 @@ Route::get('/', function () {
         'products' => config('comics')
     ];
     return view('home', $data);
-});
+})->name('home');
+
 
 Route::get('/comics', function () {
     $data = [
         'products' => config('comics')
     ];
     return view('comics.index', $data);
-});
+})->name('comics');
+
 
 Route::get('/comics/singlecomic/{id}', function ($id) {
     $comics = config('comics');
@@ -41,4 +43,4 @@ Route::get('/comics/singlecomic/{id}', function ($id) {
         abort(404); // Stampa pagina 404 
     }
     
-})->where('id','[0-9]+');
+})->where('id','[0-9]+') ->name('single_comic');
