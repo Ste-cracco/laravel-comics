@@ -1,0 +1,66 @@
+.dettaglio_comic .container_comic {
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    padding: 30px;
+    gap: 100px;
+}
+
+.cover {
+    width: 30%;
+}
+
+.text {
+    width: 70%;
+}
+
+.text h2 {
+    padding: 20px 0;
+}
+
+.prezzo {
+    display: flex;
+    padding: 15px 0;
+    gap: 50px;
+    background-color: green;
+    color: white;
+}
+
+.text p {
+    padding: 20px 0;
+}
+
+.maggiori_info {
+    background-color: lightgray;
+}
+
+.autori {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.art_by {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.art_by span {
+    color: blue;
+}
+
+.written_by {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.written_by span {
+    color: blue;
+}
+
+.maggiori_info h5 {
+    padding-right: 10px;
+}
