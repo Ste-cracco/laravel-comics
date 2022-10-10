@@ -17,24 +17,31 @@
                 ],
                 [
                     'text' => 'Movies'
+                                       
                 ],
                 [
                     'text' => 'TV'
+                    
                 ],
                 [
                     'text' => 'Games'
+                    
                 ],
                 [
                     'text' => 'Collectible'
+                    
                 ],
                 [
                     'text' => 'Videos'
+                    
                 ],
                 [
                     'text' => 'Fans'
+                    
                 ],
                 [
                     'text' => 'News'
+                    
                 ],
                 [
                     'text' => 'Shop'
@@ -46,8 +53,12 @@
         <ul class="menu">
             @foreach ($menu as $link)
                 <li>
-                    <a href="{{ isset($link['routeName']) ? route($link['routeName']) : '/' }}" class="{{ $loop -> first ? 'active' : '' }}"> 
-                        {{ $link['text'] }} 
+                    <a href="{{ isset($link['routeName']) ? route($link['routeName']) : '/' }}"
+                    @if (isset($link['routeName']))
+                        class="{{ Route::currentRouteName() === $link['routeName'] ? 'active' : '' }}"> 
+                            {{ $link['text'] }}                         
+                    @endif 
+                    
                     </a>
                 </li>       
             @endforeach
