@@ -1,3 +1,4 @@
+
 .container {
     display: flex; 
     max-width: 1200px;
@@ -5,7 +6,7 @@
 }
 
 .logo {
-    padding: 20px
+    padding: 20px;
 }
 
 .container .logo img {
@@ -29,9 +30,32 @@ li {
 a.active, a:hover {
     border-bottom: 5px solid #0282F9;
     color: #0282F9;
-    padding-bottom: 52px;      
-    cursor: pointer;          
-}.footer_top {
+    padding-bottom: 52px;     
+    cursor: pointer;         
+}
+
+ 
+/*
+
+.menu {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    margin-left: auto;
+    gap: 25px;
+}
+
+li {
+    font-weight: bold;
+    color: #464646;
+    font-size: 14px;
+
+    a.active, a:hover {
+        border-bottom: 5px solid #0282F9;
+        color: #0282F9;
+        padding-bottom: 52px;                
+    }
+} */.footer_top {
     display: flex;
     flex-basis: 0;
     flex-grow: 1;
@@ -146,7 +170,9 @@ a:last-child {
     font-size: 20px;
     font-weight: 600;
     padding-right: 20px;
-}.homepage {
+}
+
+.homepage {
     background-color: #1C1C1C;
     color: white;
     font-weight: bold;
@@ -188,28 +214,17 @@ a:last-child {
     background-image: url('../img/jumbotron.jpg');
 }
 
-.single_comic_container {
-    background-color: white;
+.fumetto .container {
     max-width: 1200px;
     margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 30px;
 }
 
-.single_comic{
-    color: black;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 150px;
-    padding: 30px 0;
-}
-
-.single_comic .text_container {
-    flex-grow: 1;
-    flex-basis: 0;
-}
-
-.specs {
-    display: flex;
-    gap: 38px;
+.fumetto .card {
+    margin-bottom: 35px;
 }* {
   margin: 0;
   padding: 0;

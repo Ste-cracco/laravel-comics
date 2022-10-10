@@ -4,6 +4,6 @@
 
 @section('content')
 
-    @include('partials.fumetto')
+    @include('comics.fumetto')
 
 @endsection

@@ -24,5 +24,21 @@ Route::get('/comics', function () {
     $data = [
         'products' => config('comics')
     ];
-    return view('comics', $data);
+    return view('comics.index', $data);
 });
+
+Route::get('/comics/singlecomic/{id}', function ($id) {
+    $comics = config('comics');
+
+    if($id < count($comics)) {
+        $comic = $comics[$id];
+        $data = [
+            'comic' => $comic
+        ];
+    return view('comics.show', $data);
+    }
+    else {
+        abort(404); // Stampa pagina 404 
+    }
+    
+})->where('id','[0-9]+');

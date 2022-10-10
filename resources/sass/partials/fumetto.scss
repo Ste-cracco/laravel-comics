@@ -3,26 +3,15 @@
     background-image: url('../img/jumbotron.jpg');
 }
 
-.single_comic_container {
-    background-color: white;
+.fumetto .container {
     max-width: 1200px;
     margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 30px;
 }
 
-.single_comic{
-    color: black;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 150px;
-    padding: 30px 0;
-}
-
-.single_comic .text_container {
-    flex-grow: 1;
-    flex-basis: 0;
-}
-
-.specs {
-    display: flex;
-    gap: 38px;
+.fumetto .card {
+    margin-bottom: 35px;
 }
